@@ -2,19 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import LeftScreen from './LeftScreen/LeftScreen.js';
 
-  class Screen extends React.Component{
-    render(){
-        return (
-            <LeftScreen/>
-        )
-    }
+const getClass = () => {
+  return {
+    name: "AVLC",
+    descricao: "Essa cadeira é foda"
   }
-  
-  
-  // ========================================
-  
-  ReactDOM.render(
-    <Screen />,
-    document.getElementById('root')
-  );
-  
+}
+
+class Screen extends React.Component {
+  render() {
+    return (
+      <LeftScreen course={getClass()}/>
+    )
+  }
+}
+
+
+// ========================================
+
+ReactDOM.render(
+  <Screen />,
+  document.getElementById('root')
+);

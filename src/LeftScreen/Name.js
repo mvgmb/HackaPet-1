@@ -16,11 +16,9 @@ import ReactDOM from 'react-dom';
     }
     render(){
         return (
-            <h1 className="name" onClick={() =>
-                alert("click")} >
+            <h1 className="Title" id="CadeiraName">
             {this.state.name}
              </h1>
-
         );
     }
   }

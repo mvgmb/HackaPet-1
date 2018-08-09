@@ -9,25 +9,32 @@ import Name from './Name.js';
 import Description from './Description.js';
 
 
-  class LeftScreen extends React.Component{
-    renderName(){
-        return <Name name = {'AVLC'} />;
+class LeftScreen extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.course = props.course;
     }
-    renderDescription(){
-        return <Description descricao = {'Essa cadeira é loca'} />
+
+    renderName() {
+        return <Name name={this.course.name} />;
     }
-    render(){
+    renderDescription() {
+        return <Description descricao={'Essa cadeira é loca'} />
+    }
+
+    render() {
         return (
             <div>
                 <div>
-               {this.renderName()}
+                    <Name name={this.course.name} />
                 </div>
                 <div>
-               {this.renderDescription()}
-               </div>
+                    {this.renderDescription()}
+                </div>
             </div>
-        ) 
+        )
     }
-  }
+}
 
-  export default LeftScreen;
+export default LeftScreen;
