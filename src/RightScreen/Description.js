@@ -14,6 +14,8 @@ class Description extends React.Component{
         return (
             <p> {this.state.text} </p>
             <p> {this.state.info} </p>
-        );
+        )
     }
 }
+
+export default Description;
