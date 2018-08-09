@@ -19,8 +19,12 @@ import Description from './Description.js';
     render(){
         return (
             <div>
+                <div>
                {this.renderName()}
+                </div>
+                <div>
                {this.renderDescription()}
+               </div>
             </div>
         ) 
     }
