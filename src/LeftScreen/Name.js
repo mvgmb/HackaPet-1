@@ -10,7 +10,6 @@ import ReactDOM from 'react-dom';
   class Name extends React.Component{
     constructor(props){
         super(props);
-        console.log(props)
         this.state = {
             name : props.name
         };
