@@ -17,3 +17,5 @@ class image extends React.Component{
         );
     }
 }
+
+export default image;
