@@ -55,4 +55,4 @@ import ReactDOM from 'react-dom';
     }
   }
 
-  export default Name;
+  export default Userbox;
