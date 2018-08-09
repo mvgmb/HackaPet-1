@@ -16,8 +16,8 @@ import ReactDOM from 'react-dom';
     }
     render(){
         return (
-            <h1 className="Title" id="CadeiraName">
-            {this.state.name}
+            <h1 className="title" id="CadeiraName">
+                {this.state.name}
              </h1>
         );
     }

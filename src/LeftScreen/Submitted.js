@@ -17,7 +17,7 @@ class Submitted extends React.Component{
 
     render(){
         return (
-            <div> 
+            <div className="containerFiles"> 
                 {this.state.files}
             </div>
         )

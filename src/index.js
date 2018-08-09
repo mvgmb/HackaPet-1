@@ -1,18 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import LeftScreen from './LeftScreen/LeftScreen.js';
+import cu from './description.txt'
 
 const getClass = () => {
   return {
-    name: "AVLC",
-    descricao: "Essa cadeira é foda"
+    name: "Compiladores",
+    descricao: cu,
+    professores: ["Leopoldo", "Luca"],
+    files : []
   }
 }
 
 class Screen extends React.Component {
   render() {
+    
     return (
-      <LeftScreen course={getClass()}/>
+      <div className="containerMain">
+         <LeftScreen course={getClass()}/>
+      </div>
     )
   }
 }

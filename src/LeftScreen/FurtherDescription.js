@@ -11,18 +11,22 @@ import ReactDOM from 'react-dom';
 class FurtherDescription extends React.Component{
     constructor(props){
         super(props);
-        this.course = props.course;
+    
         this.state = {
-            Professor: this.props[0],
-            Classes: []
+            professores : props.professores
         };
+
     }
 
     render(){
         return (
-            <div> 
-                {this.state.files}
-            </div>
+           <div>
+               <img/>
+                <p> {this.state.professores}</p>
+                <img/>
+            </div> 
         )
     }
 }
+
+export default FurtherDescription;
