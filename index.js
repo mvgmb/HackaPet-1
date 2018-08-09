@@ -8,7 +8,8 @@ const getClass = () => {
     name: "Compiladores",
     descricao: cu,
     professores: ["Leopoldo", "Luca"],
-    files : []
+    files : [],
+    img : {src:"Oi!", name:"test"}
   }
 }
 
@@ -17,6 +18,7 @@ class Screen extends React.Component {
     
     return (
       <div className="containerMain">
+        <RightScreen course={getClass()}/>
          <LeftScreen course={getClass()}/>
       </div>
     )
