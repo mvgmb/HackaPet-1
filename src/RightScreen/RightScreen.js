@@ -117,8 +117,7 @@ class RightScreen extends React.Component {
                 }}>
                     <ViewHeader labelName = "Links"/>
                 </div>
-                {this.decide()}
-                
+                {this.decide()}    
         </div>
         )
     }

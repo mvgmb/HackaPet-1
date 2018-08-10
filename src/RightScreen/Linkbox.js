@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+let link = require("../images/link.png")
 
 class Linkbox extends React.Component{
     
@@ -16,7 +17,8 @@ class Linkbox extends React.Component{
         return (
             <div>
                 {this.state.links.map(arr => (
-                    <a href = {arr.ref} target = "_blank"> {arr.nome} </a>
+
+                    <a href = {arr.ref} target = "_blank"> <img src={link} />{arr.nome} </a>
                 ))}
             </div>
         )
