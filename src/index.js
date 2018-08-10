@@ -49,12 +49,12 @@ const getCurrentCourse = () => {
 
     Links : {
       inp: {accept: ".pdf", v: false},
-      link: [{ref: "https://www.l2f.inesc-id.pt/~david/w/pt/Compiladores", nome: "Compiladores"},{ref: "https://www.l2f.inesc-id.pt/~david/w/pt/Compiladores", nome: "Compiladores"} ]
+      link: [{ref: "https://www.l2f.inesc-id.pt/~david/w/pt/Compiladores", nome: "Compiladores"},{ref: "https://github.com/", nome: "GitHub"},{ref: "https://www.freecodecamp.org/", nome: "CodeCamp"},{ref: "https://www.google.com/", nome: "Google"} ]
     },
 
     Arquivos : {
         inp : {accept: ".pdf",v:true},
-        pdfs : [{ref: imagemEstrela}, {ref : imagemEstrela}]
+        pdfs : [{ref: imagemEstrela}, {ref : imagemEstrela}, {ref : imagemEstrela}, {ref : imagemEstrela}, {ref : imagemEstrela}, {ref : imagemEstrela}, {ref : imagemEstrela}, {ref : imagemEstrela}]
     }
   }
   }

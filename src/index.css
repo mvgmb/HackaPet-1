@@ -223,4 +223,10 @@ html, body {
     justify-content: center;
     align-items: center;
 }   
-
+.fileboxpdf {
+    max-width: 100px;
+}
+.fileboxpdf img {
+    max-width: 100px;
+    height: auto;
+}
