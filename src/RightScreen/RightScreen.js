@@ -13,11 +13,6 @@ import Linkbox from './Linkbox.js';
 import Input from './Input.js';
 import Submited from './Submited.js';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Paper from '@material-ui/core/Paper';
 import ViewHeader from './ViewHeader';
 
 
@@ -82,7 +77,6 @@ class RightScreen extends React.Component {
 
     
     render() {
-        let a = 0;
         return (
         <div className="rightScreen">
                 <div id="comentarioBtn" className="navBtn" onClick={()=>{
@@ -135,10 +129,8 @@ class RightScreen extends React.Component {
                 }}>
                     <ViewHeader labelName = "Links"/>
                 </div>
-                <FilterBox/>
                 {this.decide()}
-                <Input inp = {this.state.Input.inp} />
-                <Submited/>
+                
         </div>
         )
     }
