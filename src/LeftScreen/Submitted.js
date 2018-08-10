@@ -23,3 +23,5 @@ class Submitted extends React.Component{
         )
     }
 }
+
+export default Submitted;
