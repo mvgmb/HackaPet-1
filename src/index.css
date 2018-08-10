@@ -143,7 +143,6 @@ html, body {
     background: lightblue;
 }
 
-
 .containerName {
     grid-area: a;
     display:flex;
@@ -159,6 +158,11 @@ html, body {
     align-items: center;
     font-size: 1.7vw;
     text-align: center;
+    margin-top: 45px;
+}
+.furtherDesc img {
+    max-width: 14vw;
+    height: auto;
 }
 
 .containerDesc {
