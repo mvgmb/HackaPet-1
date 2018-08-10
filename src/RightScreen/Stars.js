@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Image extends React.Component{
+class Stars extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            name: props.nome,
-            src: props.source
+            name: fiveStars,
+            src: src/images/fiveStars.png
         };
 
     }
@@ -18,4 +18,4 @@ class Image extends React.Component{
     }
 }
 
-export default Image;
+export default Stars;

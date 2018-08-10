@@ -11,45 +11,22 @@ import ReactDOM from 'react-dom';
     constructor(props){
         super(props);
         this.state = {
-            name : props.name
+            name : props.img.name,
+            src: props.img.src,
         };
     }
-    renderImage(){
 
-
-    };
-
-    renderDescription(){
-
-
-    };
-
-    renderfile(){
-
-
-    };
-
-    renderStars(){
-
-
-    };
-
-    renderUserName(){
-
-
-    };
 
 
     render(){
         return (
             <div>
-
-            {this.renderImage()}
-            {this.renderUserName()}
-            {this.renderDescription()}
-            {this.renderfile()}
-            {this.renderStars()}
-            
+                <Image src={this.state.src} name=""/>
+                {this.renderImage()}
+                {this.renderUserName()}
+                {this.renderDescription()}
+                {this.renderfile()}
+                {this.renderStars()}
             </div>
         );
     }

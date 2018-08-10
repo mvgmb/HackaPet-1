@@ -1,21 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Image extends React.Component{
+class UserName extends React.Component{
     constructor(props){
         super(props);
         this.state = {
             name: props.nome,
-            src: props.source
+            src: props.login
         };
 
     }
     render(){
         return (
-            <img src={this.state.src} name={this.state.name}>
-            </img>
+            <div>
+                <h3> {this.state.name} </h3>
+                <h4> {this.state.src} </h4>
+            </div>
         );
     }
 }
 
-export default Image;
+export default UserName;
