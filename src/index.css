@@ -85,6 +85,9 @@ html, body {
 .nav {
     transform: rotate(-90deg);
 }
+.nave{
+    transform: rotate(-90deg);
+}
 .nav button {
     display: none;
 }
@@ -174,3 +177,4 @@ html, body {
     justify-content: center;
     align-items: center;
 }   
+

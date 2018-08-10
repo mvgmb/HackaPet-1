@@ -15,7 +15,13 @@ import Submited from './Submited.js';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-
+import AddIcon from '@material-ui/icons/Add';
+import Icon from '@material-ui/core/Icon';
+import DeleteIcon from '@material-ui/icons/Delete';
+import NavigationIcon from '@material-ui/icons/Navigation';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import Paper from '@material-ui/core/Paper';
 
 
 class RightScreen extends React.Component {
@@ -52,8 +58,8 @@ class RightScreen extends React.Component {
         }else if(this.props.course.vale==3){
             this.state ={
                 Linkbox : {
-                    ref: this.props.course.rightL.link.ref,
-                    nome: this.props.course.rightL.link.nome
+                    ref: this.props.course.rightL.link[0].ref,
+                    nome: this.props.course.rightL.link[0].nome
                 },
                 Input : {
                     inp: this.props.course.rightL.inp
@@ -83,19 +89,25 @@ class RightScreen extends React.Component {
         }
     }
 
+    
     render() {
         return (
             <div className="rightScreen">
-                  <Button variant="contained" color="primary" onClick={() => { 
-                        this.setState(() => {
-                                return {
-                                    vale : 2
-                                };
-                            });
-  
-  
-
-                   }}>
+            <div className='nave'>
+         <Paper>
+            <Tabs
+                value={this.state.value}
+                indicatorColor="primary"
+                textColor="primary"
+                onChange={this.handleChange}
+            >
+                <Tab label="Active" />
+                <Tab label="Active" />
+                <Tab label="Active" />
+            </Tabs>
+         </Paper>
+         </div>
+                  <Button variant="contained" color="primary" >
                          Hello World
                   </Button>
                 <FilterBox/>
