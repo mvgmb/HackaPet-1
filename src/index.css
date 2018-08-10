@@ -224,9 +224,25 @@ html, body {
     align-items: center;
 }   
 .fileboxpdf {
-    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .fileboxpdf img {
     max-width: 100px;
     height: auto;
+    margin-right: 50px;
+}
+.fileboxpdf div {
+    border: 2px solid purple;
+    border-radius: 20px;
+    display: flex;
+    vertical-align: center;
+    margin-top: 8px;
+    margin-bottom: 9px;
+    padding: 0 45px;
+    background: white;
+}
+.fileboxpdf p {
+    margin-top: 45px;
 }
