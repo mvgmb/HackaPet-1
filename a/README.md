@@ -793,7 +793,7 @@ Now you are ready to use the imported React Bootstrap components within your com
 
 ### Using a Custom Theme
 
-Sometimes you might need to tweak the visual styles of Bootstrap (or equivalent package).<br>
+Sometimes you might need to tweak the visual styles of Bootstrap (or equidefinirTelaDireitant package).<br>
 We suggest the following approach:
 
 * Create a new package that depends on the package you wish to customize, e.g. Bootstrap.

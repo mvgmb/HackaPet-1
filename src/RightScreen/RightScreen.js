@@ -15,10 +15,6 @@ import Submited from './Submited.js';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import AddIcon from '@material-ui/icons/Add';
-import Icon from '@material-ui/core/Icon';
-import DeleteIcon from '@material-ui/icons/Delete';
-import NavigationIcon from '@material-ui/icons/Navigation';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Paper from '@material-ui/core/Paper';
@@ -29,42 +25,41 @@ class RightScreen extends React.Component {
     constructor(props) {
         super(props);
         
-        
-        if(this.props.course.vale==1){
+        if(this.props.course.definirTelaDireita==1){
             this.state = {
                 Userbox : {
-                    imgs : this.props.course.rightC.imgs,
-                    text: this.props.course.rightC.text,
-                    info: this.props.course.rightC.info,
-                    name: this.props.course.rightC.name,
-                    login: this.props.course.rightC.login
+                    imgs : this.props.course.comentariosDosAlunos.imgs,
+                    text: this.props.course.comentariosDosAlunos.text,
+                    info: this.props.course.comentariosDosAlunos.info,
+                    name: this.props.course.comentariosDosAlunos.name,
+                    login: this.props.course.comentariosDosAlunos.login
                 },
                 Input : {
-                    inp: this.props.course.rightC.inp
+                    inp: this.props.course.comentariosDosAlunos.inp
                 },
-                vale : this.props.course.vale
+                definirTelaDireita : this.props.course.definirTelaDireita
             }
         }
-        else if(this.props.course.vale==2){
+        else if(this.props.course.definirTelaDireita==2){
             this.state ={
                 filebox:{
 
                 },
                 Input : {
-                    inp: this.props.course.rightF.inp
+                    inp: this.props.course.Arquivos.inp
                 },
-                vale : this.props.course.vale
+                definirTelaDireita : this.props.course.definirTelaDireita
             }
-        }else if(this.props.course.vale==3){
+        }else if(this.props.course.definirTelaDireita==3){
             this.state ={
                 Linkbox : {
-                    ref: this.props.course.rightL.link[0].ref,
-                    nome: this.props.course.rightL.link[0].nome
+                    ref: this.props.course.Links.link[0].ref,
+                    nome: this.props.course.Links.link[0].nome
                 },
                 Input : {
-                    inp: this.props.course.rightL.inp
+                    inp: this.props.course.Links.inp
                 },
-                vale : this.props.course.vale
+                definirTelaDireita : this.props.course.definirTelaDireita
             }
         }else{
             console.log("deu merda");
@@ -73,7 +68,7 @@ class RightScreen extends React.Component {
     }
 
     decide = function(){
-        switch(this.state.vale){
+        switch(this.state.definirTelaDireita){
             case 1:
                 return  <div>
                              <Userbox Userbox={this.state.Userbox}  />
@@ -101,9 +96,55 @@ class RightScreen extends React.Component {
                 textColor="primary"
                 onChange={this.handleChange}
             >
-                <Tab label="Active" />
-                <Tab label="Active" />
-                <Tab label="Active" />
+                <Tab label="Active" onClick={() =>{
+                    
+                    this.setState(() => {
+                        return {   Linkbox : {
+                            ref: this.props.course.Links.link[0].ref,
+                            nome: this.props.course.Links.link[0].nome
+                        },
+                        Input : {
+                            inp: this.props.course.Links.inp
+                        },
+                        definirTelaDireita :3
+                    };
+                    });
+                    }}/>
+
+                <Tab label="Active" onClick={() =>{
+                    
+                    this.setState(() => {
+                        return {
+                            filebox:{
+
+                            },
+                            Input : {
+                                inp: this.props.course.Arquivos.inp
+                            },
+                            definirTelaDireita : 2
+                        };
+                    });
+                    }} />
+
+                <Tab label="Active" onClick={() =>{
+                    
+                    this.setState(() => {
+                        return {
+                            Userbox : {
+                                imgs : this.props.course.comentariosDosAlunos.imgs,
+                                text: this.props.course.comentariosDosAlunos.text,
+                                info: this.props.course.comentariosDosAlunos.info,
+                                name: this.props.course.comentariosDosAlunos.name,
+                                login: this.props.course.comentariosDosAlunos.login
+                            },
+                            Input : {
+                                inp: this.props.course.comentariosDosAlunos.inp
+                            },
+                            definirTelaDireita : 1
+                        };
+                    });
+                    }}/>
+                    
             </Tabs>
          </Paper>
          </div>

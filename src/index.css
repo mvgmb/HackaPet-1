@@ -87,6 +87,7 @@ html, body {
 }
 .nave{
     transform: rotate(-90deg);
+    margin-top : 300px;
 }
 .nav button {
     display: none;

@@ -8,7 +8,7 @@ class Box extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            decideVale : this.props.vale
+            decidedefinirTelaDireita : this.props.definirTelaDireita
         };
 
     }

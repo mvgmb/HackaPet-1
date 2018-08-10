@@ -11,7 +11,6 @@ import FurtherDescription from './FurtherDescription.js';
 import ViewHeader from './ViewHeader.js';
 import Submitted from './Submitted.js';
 
-
 class LeftScreen extends React.Component {
 
     constructor(props) {
@@ -32,38 +31,31 @@ class LeftScreen extends React.Component {
                 <div className="containerName" >
                     <Name name={this.state.name} />
                 </div>
+
                 <div className="containerDesc" >
                     <Description descricao={this.state.descricao} />
                 </div>
 
                 <div className="containerFiles">
                     <Submitted files={this.state.files }/>
-                    <Submitted files={this.state.files }/>
-                    <Submitted files={this.state.files }/>
-                </div>
-                <div className="containerLinks">
-                    <Submitted files={this.state.files }/>
-                    <Submitted files={this.state.files }/>
-                    <Submitted files={this.state.files }/>
-                </div>
-                <div className="containerResume">
-                    <Submitted files={this.state.files }/>
                 </div>
 
-                <div className="furtherDesc">
+                <div>
                     <FurtherDescription professores={this.state.professores} />
                 </div>
 
-                <div id="comentarioBtn" className="navBtn">
-                    <ViewHeader labelName = "Comentarios" />
+                <div>
+                    <div className="comentarioBtn1">
+                        <ViewHeader labelName = "Comentarios" />
+                    </div>
+                    <div className="comentarioBtn2">
+                        <ViewHeader labelName = "Arquivos" />
+                    </div>
+                    <div className="comentarioBtn3">
+                        <ViewHeader labelName = "Links" />
+                    </div>
                 </div>
-                <div id="arquivosBtn" className="navBtn">
-                    <ViewHeader labelName = "Arquivos" />
-                </div>
-                <div id="linksBtn" className="navBtn">
-                    <ViewHeader labelName = "Links" />
-                </div>
-
+                
             </div>
         )
     }
