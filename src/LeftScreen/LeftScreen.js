@@ -37,17 +37,17 @@ class LeftScreen extends React.Component {
                 </div>
 
                 <div className="containerFiles">
-                    <Submitted files={this.state.files }/>
-                    <Submitted files={this.state.files }/>
-                    <Submitted files={this.state.files }/>
+                    <Submitted files={this.state.files}/>
+                    <Submitted files={this.state.files}/>
+                    <Submitted files={this.state.files}/>
                 </div>
                 <div className="containerLinks">
-                    <Submitted files={this.state.files }/>
-                    <Submitted files={this.state.files }/>
-                    <Submitted files={this.state.files }/>
+                    <Submitted files={this.state.files}/>
+                    <Submitted files={this.state.files}/>
+                    <Submitted files={this.state.files}/>
                 </div>
                 <div className="containerResume">
-                    <Submitted files={this.state.files }/>
+                    <Submitted files={this.state.files}/>
                 </div>
 
                 <div className="furtherDesc">

@@ -6,6 +6,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+let imagemPdf = require('../images/iconPdf.png');
 
 class Submitted extends React.Component{
     constructor(props){
@@ -19,9 +20,8 @@ class Submitted extends React.Component{
         return (
             <div className="containerFiles"> 
                 <div className="namepdf">
-                    <label for="" className="fileLabel"></label>
-                    {this.state.files}
-                    <p>noaaaaaaaaaaaaaaaaaaaaame.pdf</p>
+                    <a href = {this.state.files[0].src} download> <img src={imagemPdf} /> </a>
+                    <p> {this.state.files[0].name} </p>    
                 </div>
             </div>
         )

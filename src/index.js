@@ -20,7 +20,7 @@ const getCurrentCourse = () => {
       name: "Compiladores",
       descricao: json.text,
       professores: [{nome:"Leopoldo",img: {src: imagemProf, name: "Leopoldo"}}],
-      files : []
+      files : [{src: imagemEstrela, name: "Melhor PDF"}]
     },
 
     //A parte direita da tela
