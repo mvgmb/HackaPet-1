@@ -43,9 +43,7 @@ class RightScreen extends React.Component {
         }
         else if(this.props.course.definirTelaDireita==2){
             this.state ={
-                filebox:{
-
-                },
+                Filebox : this.props.course.Arquivos.pdfs,
                 Input : {
                     inp: this.props.course.Arquivos.inp
                 },
@@ -53,10 +51,7 @@ class RightScreen extends React.Component {
             }
         }else if(this.props.course.definirTelaDireita==3){
             this.state ={
-                Linkbox : {
-                    ref: this.props.course.Links.link[0].ref,
-                    nome: this.props.course.Links.link[0].nome
-                },
+                Linkbox : this.props.course.Links.link,
                 Input : {
                     inp: this.props.course.Links.inp
                 },
@@ -87,16 +82,58 @@ class RightScreen extends React.Component {
 
     
     render() {
+        let a = 0;
         return (
         <div className="rightScreen">
-                <div id="comentarioBtn" className="navBtn">
+                <div id="comentarioBtn" className="navBtn" onClick={()=>{
+                
+                    this.setState(() => {
+                        return {
+                            Userbox : {
+                                imgs : this.props.course.comentariosDosAlunos.imgs,
+                                text: this.props.course.comentariosDosAlunos.text,
+                                info: this.props.course.comentariosDosAlunos.info,
+                                name: this.props.course.comentariosDosAlunos.name,
+                                login: this.props.course.comentariosDosAlunos.login
+                            },
+                            Input : {
+                                inp: this.props.course.comentariosDosAlunos.inp
+                            },
+                            definirTelaDireita : 1
+                        };
+                    });
+  
+  
+                }}>
                     <ViewHeader labelName = "Comentarios" />
                 </div>
-                <div id="arquivosBtn" className="navBtn">
-                    <ViewHeader labelName = "Arquivos" />
+                <div id="arquivosBtn" className="navBtn" onClick={()=>{
+                     this.setState(() => {
+                        return {
+                            Filebox : this.props.course.Arquivos.pdfs,
+                            Input : {
+                                inp: this.props.course.Arquivos.inp
+                            },
+                            definirTelaDireita : 2
+                        };
+                    });
+                }} >
+
+                    <ViewHeader labelName = "Arquivos"/>
                 </div>
-                <div id="linksBtn" className="navBtn">
-                    <ViewHeader labelName = "Links" />
+
+                <div id="linksBtn" className="navBtn" onClick={()=>{
+                     this.setState(() => {
+                        return {
+                            Linkbox : this.props.course.Links.link,
+                            Input : {
+                                inp: this.props.course.Links.inp
+                            },
+                            definirTelaDireita : 3
+                        };
+                    });
+                }}>
+                    <ViewHeader labelName = "Links"/>
                 </div>
                 <FilterBox/>
                 {this.decide()}
