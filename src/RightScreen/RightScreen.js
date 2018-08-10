@@ -28,7 +28,8 @@ class RightScreen extends React.Component {
             },
 
             Linkbox : {
-               
+                ref: this.props.course.link.ref,
+                nome: this.props.course.link.nome
             },
 
             Filebox : {
