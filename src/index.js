@@ -32,7 +32,3 @@ ReactDOM.render(
   <Screen />,
   document.getElementById('root')
 );
-<<<<<<< HEAD
-
-=======
->>>>>>> 99977ec7c97f5fde3a7190a64b526b298ada80b3
