@@ -13,6 +13,37 @@ html, body {
 }
 
 
+
+
+
+.leftSfecreen {
+    grid-area: leftScreen;
+    display: grid;
+    grid-template-areas:
+        "name prof menu"
+        "descricao prof menu"
+        "file prof menu";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background: lightblue;
+}
+.containerName {
+    grid-area: name;
+    background: red;
+    width: 100px;
+    height: 100px;
+}
+.containerDesc {
+    grid-area: descricaoCadeira;
+    background: green;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
 .rightScreen {
     grid-area: rightScreen;
     background: red;
@@ -52,7 +83,7 @@ html, body {
     justify-content: center;
     align-items: center;
     background: red;
-    border: 15px solid red;
+    border-radius: 25px 0 0 25px;
 }
 .box4 {
     grid-area: d;
@@ -69,6 +100,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px 0 0 25px;
 }
 .box7 {
     grid-area: g;
@@ -85,6 +117,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px 0 0 25px;
 }
 .boxes {
     display: flex;
