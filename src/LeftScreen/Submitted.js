@@ -20,7 +20,7 @@ class Submitted extends React.Component{
         return (
 
             <div className="containerFiles"> 
-                <div className="nomepdf">
+                <div className="namepdf">
                     <a href = {this.state.files[0].src} download> <img src={imagemPdf} /> </a>
                     <p> {this.state.files[0].name} </p>    
                 </div>
