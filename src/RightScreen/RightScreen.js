@@ -23,13 +23,7 @@ class RightScreen extends React.Component {
         
         if(this.props.course.definirTelaDireita==1){
             this.state = {
-                Userbox : {
-                    imgs : this.props.course.comentariosDosAlunos.imgs,
-                    text: this.props.course.comentariosDosAlunos.text,
-                    info: this.props.course.comentariosDosAlunos.info,
-                    name: this.props.course.comentariosDosAlunos.name,
-                    login: this.props.course.comentariosDosAlunos.login
-                },
+                Userbox : this.props.course.comentariosDosAlunos.comentarios,
                 Input : {
                     inp: this.props.course.comentariosDosAlunos.inp
                 },
@@ -83,13 +77,7 @@ class RightScreen extends React.Component {
                 
                     this.setState(() => {
                         return {
-                            Userbox : {
-                                imgs : this.props.course.comentariosDosAlunos.imgs,
-                                text: this.props.course.comentariosDosAlunos.text,
-                                info: this.props.course.comentariosDosAlunos.info,
-                                name: this.props.course.comentariosDosAlunos.name,
-                                login: this.props.course.comentariosDosAlunos.login
-                            },
+                            Userbox : this.props.course.comentariosDosAlunos.comentarios,
                             Input : {
                                 inp: this.props.course.comentariosDosAlunos.inp
                             },

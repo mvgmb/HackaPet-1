@@ -17,6 +17,7 @@ const getCurrentCourse = () => {
   return {
     //A parte esquerda da tela
     left: {
+
       name: "Compiladores",
       descricao: json.text,
       professores: [{nome:"Leopoldo",img: {src: imagemProf, name: "Leopoldo"}}],
@@ -27,13 +28,22 @@ const getCurrentCourse = () => {
     right: {
       definirTelaDireita: mapping['comentarioDosAlunos'],
 
+    
     comentariosDosAlunos : {
-      imgs : [{src: imagemPerfil, name:"test"},
+      comentarios : [
+              {imgs : [{src: imagemPerfil, name:"test"},
+                      {src: imagemEstrela , name:"test"}],
+              text : 'Cadeira muito TOP!!! Amei as aulas e achei o professor muito instrutivo, sempre ajudando nas horas difíceis.',
+              info : '2018.2 Leopoldo Afonso',
+              name : 'Sheila Vitoria',
+              login : '@svgm3'},
+              {imgs : [{src: imagemPerfil, name:"test"},
               {src: imagemEstrela , name:"test"}],
-      text : 'Cadeira muito TOP!!! Amei as aulas e achei o professor muito instrutivo, sempre ajudando nas horas difíceis.',
-      info : '2018.2 Leopoldo Afonso',
-      name : 'Sheila Vitoria',
-      login : '@svgm3',
+              text : 'Cadeira muito TOP!!! Amei as aulas e achei o professor muito instrutivo, sempre ajudando nas horas difíceis.',
+              info : '2018.2 Leopoldo Afonso',
+              name : 'Sheila Vitoria',
+              login : '@svgm3'}
+              ],
       inp: {accept: ".pdf", v: false},
     },
 

@@ -18,6 +18,7 @@ class Submitted extends React.Component{
 
     render(){
         return (
+
             <div className="containerFiles"> 
                 <div className="nomepdf">
                     <a href = {this.state.files[0].src} download> <img src={imagemPdf} /> </a>
