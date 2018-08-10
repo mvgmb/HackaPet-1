@@ -6,7 +6,7 @@ class UserName extends React.Component{
         super(props);
         this.state = {
             name: props.nome,
-            src: props.login
+            login: props.login
         };
 
     }
@@ -14,7 +14,7 @@ class UserName extends React.Component{
         return (
             <div>
                 <h3> {this.state.name} </h3>
-                <h4> {this.state.src} </h4>
+                <h4> {this.state.login} </h4>
             </div>
         );
     }
