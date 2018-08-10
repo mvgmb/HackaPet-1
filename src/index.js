@@ -13,7 +13,11 @@ const getClass = () => {
     descricao: json.text,
     professores: ["Leopoldo", "Luca"],
     files : [],
-    img : [{src: UserImage, name:"test"}, {src: Stars, name:"test"}]
+    img : [{src: UserImage, name:"test"}, {src: Stars, name:"test"}],
+    user: "ihls2",
+    text: "Descrição qualquer de uma cadeira qualquer",
+    info: "QUALQUER",
+    prof: "Qualquer Prof"
   }
 }
 

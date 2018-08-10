@@ -14,7 +14,11 @@ import UserName from './UserName';
     constructor(props){
         super(props);
         this.state = {
-             a: [{
+            user: props.user,
+            text: props.text,
+            info: props.info,
+            prof: props.prof,
+            a: [{
                     name : props.img[0].name,
                     src: props.img[0].src
              },
@@ -30,8 +34,8 @@ import UserName from './UserName';
         return (
             <div>
                 <Image src={this.state.a[0].src} name="photoProfile"> </Image>
-                <Description text={this.state.text} info={this.state.info}> </Description>
-                <UserName name={this.state.name} info={this.state.name}> </UserName>
+                <Description text={this.state.text} prof={this.state.prof}> </Description>
+                <UserName user={this.state.user} info={this.state.info}> </UserName>
                 <Image src={this.state.a[1].src} name="stars"> </Image>
                 <div> <h2>FILE</h2> </div>
             </div>
