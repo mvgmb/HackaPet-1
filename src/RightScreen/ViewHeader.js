@@ -13,8 +13,6 @@ class ViewHeader extends React.Component{
     
     constructor(props) {
         super(props);
-        
-
         this.state = {
             click : props.onClick,
             labelName : props.labelName

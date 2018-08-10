@@ -18,8 +18,11 @@ class Submitted extends React.Component{
     render(){
         return (
             <div className="containerFiles"> 
-                <label for="" className="fileLabel"></label>
-                {this.state.files}
+                <div className="nomepdf">
+                    <label for="" className="fileLabel"></label>
+                    {this.state.files}
+                    <span>nome.pdf</span>
+                </div>
             </div>
         )
     }
