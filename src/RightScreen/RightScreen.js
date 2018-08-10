@@ -113,9 +113,8 @@ class RightScreen extends React.Component {
                     
                     this.setState(() => {
                         return {
-                            filebox:{
-
-                            },
+                                Filebox : this.props.course.Arquivos.pdfs
+                            ,
                             Input : {
                                 inp: this.props.course.Arquivos.inp
                             },
