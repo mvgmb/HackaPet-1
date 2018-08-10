@@ -2,7 +2,7 @@
 
 
 html, body {
-      background-color: #AFA;
+      background-color: lightblue;
       font-family: "Raleway", Times, serif;
 }
 .containerMain {
@@ -29,12 +29,8 @@ html, body {
     grid-template-rows: 33.3% 33.3% 33.3%;
 }
 
-.nave{
-    background: #e88b2e;
-}
 .rBtn {
     width: 10%;
-    background: purple;
 }
 .rightContent {
     grid-area: rContent;
@@ -65,23 +61,23 @@ html, body {
 
 #comentarioBtn {
     grid-area: coment;
-    background: #eb4026;
+    background: lightblue;
 }
 #comentarioBtn:hover{
-    background: #e88b2e;
+    background:  rgb(143, 177, 189);
 }
 #comentarioBtn:active {
-    background: lightblue;
+    background: rgb(97, 118, 126);
 }
 #arquivosBtn {
     grid-area: arquiv;
     background: lightblue;
 }
 #arquivosBtn:hover {
-    background: #e88b2e;
+    background: rgb(143, 177, 189);
 }
-#arquivos:active {
-    background: black;
+#arquivosBtn:active {
+    background: rgb(97, 118, 126);
 }
 #linksBtn {
     grid-area: links;
@@ -89,7 +85,10 @@ html, body {
  
 }
 #linksBtn:hover {
-    background: #e88b2e;
+    background: rgb(143, 177, 189);
+}
+#linksBtn:active {
+    background: rgb(97, 118, 126);
 }
 /*----- User Box ------*/
 
@@ -199,18 +198,24 @@ html, body {
     text-align: center;
 
 }
-.namepdf p {
+.namepdf div {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 70px;
+    max-width: 150px;
+    font-size: 15px;
+    margin-top: -14px;
 }
 .containerResume {
     grid-area: g;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.containerResume a {
+    max-width: 120px;
+    height: auto;
 }
 .containerLinks {
     grid-area: h;
