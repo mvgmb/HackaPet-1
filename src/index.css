@@ -1,51 +1,99 @@
-body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-  }
-  
-  ol, ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 34px;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
-  
-  .game {
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+html, body {
+      background-color: #AFA;
+      font-family: "Raleway", Times, serif;
+}
+.containerMain {
+    display:grid;
+    grid-template-areas:
+        "leftScreen rightScreen";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 770px;
+}
+
+
+.rightScreen {
+    grid-area: rightScreen;
+    background: red;
+}
+
+.leftScreen {
+    grid-area: leftScreen;
+    display: grid;
+    grid-template-areas:
+        "a b c"
+        "d e f"
+        "g h i";
+    grid-template-columns: 55% 39% 6%;
+    grid-template-rows: 33% 33% 33%;
+    background: lightblue;
+}
+.box1 {
+    grid-area: a;
+    display:flex;
+    justify-content: center;
+    padding : 20% 0 15% 0;
+    font-size: 1.3vw;
+
+}
+.box2 {
+    grid-area: b;
     display: flex;
-    flex-direction: row;
-  }
-  
-  .game-info {
-    margin-left: 20px;
-  }
-  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7vw;
+    text-align: center;
+}
+.box3 {
+    grid-area: c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    border: 15px solid red;
+}
+.box4 {
+    grid-area: d;
+    padding: 0 15% 0 15%;
+    font-size: 1.2vw;
+    justify-content: center;
+}
+.box5 {
+    grid-area: e;    
+    
+}
+.box6 {
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box7 {
+    grid-area: g;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box8 {
+    grid-area: h;
+}
+.box9 {
+    grid-area: i;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.miniBox{
+    margin-right: 10px; 
+    background: blueviolet;
+    width: 75px;
+    height: 100px;
+}
