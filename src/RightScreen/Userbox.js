@@ -13,16 +13,32 @@ import UserName from './UserName';
   class Userbox extends React.Component{
     constructor(props){
         super(props);
-        this.state = props.userbox;
+        this.state = {
+            login: props.login,
+            user: props.user,
+            text: props.text,
+            info: props.info,
+            prof: props.prof,
+            a: [{
+                    name : props.img[0].name,
+                    src: props.img[0].src
+             },
+            {       name: props.img[1].name,
+                    src: props.img[1].src
+            }]
+        };
+            
     }
+
 
     render(){
         return (
-            <div>
-                <Image img={this.state.imgs[0]} name="photoProfile"> </Image>
-                <Description text={this.state.text} info={this.state.info}> </Description>
-                <UserName name={this.state.name} login={this.state.login}> </UserName>
-                <Image img={this.state.imgs[1]} name="stars"> </Image>
+            <div> 
+                <Image src={this.state.a[0].src} name="photoProfile"> </Image>
+                <UserName user={this.state.user} login={this.state.login}> </UserName>
+                <Description text={this.state.text} prof={this.state.prof}> </Description>
+                <Image src={this.state.a[1].src} name="stars"> </Image>
+                <div> <h2>FILE</h2> </div>
             </div>
         );
     }
