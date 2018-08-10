@@ -27,9 +27,9 @@ html, body {
     grid-area: leftScreen;
     display: grid;
     grid-template-areas:
-        "a b nav"
-        "d e nav"
-        "g h nav";
+        "a b c"
+        "d e f"
+        "g h i";
     grid-template-columns: 55% 39% 6%;
     grid-template-rows: 33% 33% 33%;
     background: lightblue;
@@ -51,25 +51,9 @@ html, body {
     font-size: 1.7vw;
     text-align: center;
 }
-.nav {
-    grid-area: nav;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: red;
-    border-radius: 25px 0 0 25px;
-}
-.nav button {
-    display: none;
-}
-.nav label {
-    display: block;
-    padding: 0 100px 0 100px;
-    transform: rotate(270deg);
-}
-.nav label:hover {
-    background: green;
+.comentarioBtn {
+  grid-area: c;
+  background: blue;
 }
 .containerDesc {
     grid-area: d;
@@ -81,12 +65,9 @@ html, body {
     grid-area: e;    
     
 }
-.box6 {
+.arquivosBtn {
     grid-area: f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px 0 0 25px;
+    background: green;
 }
 .box7 {
     grid-area: g;
@@ -98,12 +79,9 @@ html, body {
 .box8 {
     grid-area: h;
 }
-.box9 {
+.linksBtn {
     grid-area: i;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px 0 0 25px;
+    background: blue;    
 }
 .boxes {
     display: flex;
