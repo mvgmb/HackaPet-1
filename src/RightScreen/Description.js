@@ -12,9 +12,11 @@ class Description extends React.Component{
     }
     render(){
         return (
-            <p> {this.state.text} </p>
-            <p> {this.state.info} </p>
-        )
+            <div>
+                <p> {this.state.text} </p>
+                <p> {this.state.info} </p>
+            </div>    
+        );
     }
 }
 

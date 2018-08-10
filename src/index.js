@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import LeftScreen from './LeftScreen/LeftScreen.js';
-import cu from './description.txt'
+import json from './description.json';
+import RightScreen from "./RightScreen/RightScreen.js";
+
+let a = require('./coala.jpg');
 
 const getClass = () => {
   return {
     name: "Compiladores",
-    descricao: cu,
+    descricao: json.text,
     professores: ["Leopoldo", "Luca"],
     files : [],
-    img : {src:"/Users/italo/Desktop/HackaPet/src", name:"test"}
+    img : {src: a, name:"test"}
   }
 }
 
