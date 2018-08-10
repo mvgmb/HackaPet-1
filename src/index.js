@@ -26,7 +26,7 @@ const getClass = () => {
       info : '2018.2 Leopoldo Afonso',
       name : 'Sheila Vitoria',
       login : '@svgm3',
-      inp: {accept: ".pdf"}
+      inp: {accept: ".pdf", v: false}
     }
     
   }
