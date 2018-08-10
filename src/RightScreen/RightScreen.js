@@ -18,6 +18,7 @@ import Button from '@material-ui/core/Button';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Paper from '@material-ui/core/Paper';
+import ViewHeader from './ViewHeader';
 
 
 class RightScreen extends React.Component {
@@ -88,63 +89,15 @@ class RightScreen extends React.Component {
     render() {
         return (
         <div className="rightScreen">
-            <div className="nave">
-         <Paper>
-            <Tabs
-                value={this.state.value}
-                indicatorColor="primary"
-                textColor="primary"
-                onChange={this.handleChange}
-            >
-                <Tab className="rBtn" label="Links" onClick={() =>{
-                    
-                    this.setState(() => {
-                        return {   
-                            Linkbox : this.props.course.Links.link,
-                        Input : {
-                            inp: this.props.course.Links.inp
-                        },
-                        definirTelaDireita :3
-                    };
-                    });
-                    }}/>
-
-                <Tab className="rBtn" label="Arquivos" onClick={() =>{
-                    
-                    this.setState(() => {
-                        return {
-                                Filebox : this.props.course.Arquivos.pdfs
-                            ,
-                            Input : {
-                                inp: this.props.course.Arquivos.inp
-                            },
-                            definirTelaDireita : 2
-                        };
-                    });
-                    }} />
-                <label></label>
-                <Tab className="rBtn" label="Comentarios" onClick={() => {
-                    
-                    this.setState(() => {
-                        return {
-                            Userbox : {
-                                imgs : this.props.course.comentariosDosAlunos.imgs,
-                                text: this.props.course.comentariosDosAlunos.text,
-                                info: this.props.course.comentariosDosAlunos.info,
-                                name: this.props.course.comentariosDosAlunos.name,
-                                login: this.props.course.comentariosDosAlunos.login
-                            },
-                            Input : {
-                                inp: this.props.course.comentariosDosAlunos.inp
-                            },
-                            definirTelaDireita : 1
-                        };
-                    });
-                    }}/>
-                    
-            </Tabs>
-         </Paper>
-         </div>
+                <div id="comentarioBtn" className="navBtn">
+                    <ViewHeader labelName = "Comentarios" />
+                </div>
+                <div id="arquivosBtn" className="navBtn">
+                    <ViewHeader labelName = "Arquivos" />
+                </div>
+                <div id="linksBtn" className="navBtn">
+                    <ViewHeader labelName = "Links" />
+                </div>
                 <FilterBox/>
                 {this.decide()}
                 <Input inp = {this.state.Input.inp} />

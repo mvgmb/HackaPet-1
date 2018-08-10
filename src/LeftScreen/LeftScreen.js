@@ -54,15 +54,7 @@ class LeftScreen extends React.Component {
                     <FurtherDescription professores={this.state.professores} />
                 </div>
 
-                <div id="comentarioBtn" className="navBtn">
-                    <ViewHeader labelName = "Comentarios" />
-                </div>
-                <div id="arquivosBtn" className="navBtn">
-                    <ViewHeader labelName = "Arquivos" />
-                </div>
-                <div id="linksBtn" className="navBtn">
-                    <ViewHeader labelName = "Links" />
-                </div>
+              
 
             </div>
         )
