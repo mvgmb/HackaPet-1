@@ -1,2 +1,2 @@
 # HackaPet
-HackaTon Code =)
+HackaThon Code =)
