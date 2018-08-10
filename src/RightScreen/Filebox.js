@@ -7,7 +7,7 @@ class Filebox extends React.Component{
 
     render(){
         return (
-            <div> </div>
+            <div class="fileBox">FILE BOCXXXXXX</div>
         )
     }
 }

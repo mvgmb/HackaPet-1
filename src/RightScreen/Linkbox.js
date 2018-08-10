@@ -6,7 +6,7 @@ class Linkbox extends React.Component{
 
     render(){
         return (
-            <div> </div>
+            <div class="linkBox"> </div>
         )
     }
 }

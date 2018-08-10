@@ -19,11 +19,14 @@ html, body {
 .rightScreen {
     grid-area: rightScreen;
     background: #eb4026;
+    overflow: scroll;
 }
 .rightScreen img {
     width: 100%;
     height: auto;
 }
+/*----- User Box ------*/
+
 .userBox {
     display: grid;
     margin: 20px auto;
@@ -51,6 +54,14 @@ html, body {
 .userDescription {
     grid-area: content;
     padding: 15px;
+}
+/*----- File Box ------*/
+.fileBox {
+    background: black;
+}
+/*----- Link Box ------*/
+.linkBox {
+    background: purple;
 }
 
 /*-------------------------
@@ -97,6 +108,7 @@ html, body {
 #arquivosBtn:hover {
     background: #e88b2e;
 }
+
 #linksBtn {
     grid-area: i;
     background: lightblue;   
