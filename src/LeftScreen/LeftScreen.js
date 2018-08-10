@@ -17,7 +17,7 @@ class LeftScreen extends React.Component {
         this.state = {
             name : props.course.name,
             descricao : props.course.descricao,
-            professores : props.course.professores[1]
+            professores : props.course.professores[0]
         }
     
     }
