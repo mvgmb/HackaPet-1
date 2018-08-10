@@ -1,20 +1,26 @@
-class Description extends React.Component{
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Userbox from './Userbox';
+
+
+class Box extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            text: props.text,
-            info: props.info
+            decideVale : this.props.vale
         };
 
     }
+
+
     render(){
         return (
-            <div class="userDescription">
-                <p> {this.state.text} </p>
-                <p> {this.state.info} </p>
+            <div>
+                decide();
             </div>    
         );
     }
 }
 
-export default Description;
+export default Box;

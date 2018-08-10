@@ -5,14 +5,18 @@ import ReactDOM from 'react-dom';
 
 class Input extends React.Component{
     constructor(props){
+        console.log("input");
+        console.log(props);
+
         super(props);
         this.state = {
-             in:props.inp.inp
+             in: props.inp
         };
+        
 
     }
     render(){
-        if(this.state.in.a){
+        if(this.state.in.v){
             return (<input className="userArchieveUP" type="file" accept={this.state.in.accept}>
             </input>);
         }

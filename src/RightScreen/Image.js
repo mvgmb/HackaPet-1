@@ -7,11 +7,12 @@ class Image extends React.Component{
         this.state = {
             src: props.img.src
         };
+        console.log(this.state);
 
     }
     render(){
         return (
-            <img src={this.state.src} name={this.state.name}>
+            <img className="userImage" src={this.state.src} name={this.state.name}>
             </img>
         );
     }

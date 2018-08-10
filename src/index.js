@@ -19,7 +19,7 @@ const getClass = () => {
       files : []
     },
     right: {
-      vale: 1,
+      vale: 3,
     rightC : {
       imgs : [{src: imagemPerfil, name:"test"},
               {src: imagemEstrela , name:"test"},

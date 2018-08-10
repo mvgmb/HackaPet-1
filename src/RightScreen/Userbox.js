@@ -11,7 +11,7 @@ import UserName from './UserName.js';
   class Userbox extends React.Component{
     constructor(props){
         super(props);
-        this.state = props.userbox;
+        this.state = props.Userbox;
     }
 
     render(){

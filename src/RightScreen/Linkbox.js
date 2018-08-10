@@ -4,10 +4,11 @@ import ReactDOM from 'react-dom';
 
 class Linkbox extends React.Component{
     constructor(props){
+        
         super(props);
         this.state = {
-            ref: props.linkbox.ref,
-            nome: props.linkbox.nome
+            ref: props.Linkbox.ref,
+            nome: props.Linkbox.nome
         };
     }
 
