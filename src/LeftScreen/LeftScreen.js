@@ -34,23 +34,31 @@ class LeftScreen extends React.Component {
                 <div className="containerDesc" >
                     <Description descricao={this.state.descricao} />
                 </div>
+
                 <div className="containerFiles">
                     <Submitted files={this.state.files }/>
                 </div>
-                <div>
+                <div className="containerFiles">
+                    <Submitted files={this.state.files }/>
+                </div>
+                <div className="containerFiles">
+                    <Submitted files={this.state.files }/>
+                </div>
+
+                <div className="furtherDesc">
                     <FurtherDescription professores={this.state.professores} />
                 </div>
-                <div>
-                    <div className="comentarioBtn">
-                        <ViewHeader labelName = "Comentarios" />
-                    </div>
-                    <div className="arquivosBtn">
-                        <ViewHeader labelName = "Arquivos" />
-                    </div>
-                    <div className="linksBtn">
-                        <ViewHeader labelName = "Links" />
-                    </div>
+
+                <div id="comentarioBtn" className="navBtn">
+                    <ViewHeader labelName = "Comentarios" />
                 </div>
+                <div id="arquivosBtn" className="navBtn">
+                    <ViewHeader labelName = "Arquivos" />
+                </div>
+                <div id="linksBtn" className="navBtn">
+                    <ViewHeader labelName = "Links" />
+                </div>
+                
             </div>
         )
     }

@@ -31,16 +31,50 @@ html, body {
         "d e f"
         "g h i";
     grid-template-columns: 55% 39% 6%;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
     background: lightblue;
 }
+.nav {
+    transform: rotate(-90deg);
+}
+.nav button {
+    display: none;
+}
+.navBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+}
+
+#comentarioBtn {
+    grid-area: c;
+    background: red;
+}
+#comentarioBtn:hover{
+    background: #e88b2e;
+}
+#arquivosBtn {
+    grid-area: f;
+    background: lightblue;
+}
+#arquivosBtn:hover {
+    background: #e88b2e;
+}
+#linksBtn {
+    grid-area: i;
+    background: lightblue;    
+}
+#linksBtn:hover {
+    background: #e88b2e;
+}
+
 .containerName {
     grid-area: a;
     display:flex;
     justify-content: center;
     padding : 20% 0 15% 0;
     font-size: 1.3vw;
-
 }
 .furtherDesc {
     grid-area: b;
@@ -51,24 +85,18 @@ html, body {
     font-size: 1.7vw;
     text-align: center;
 }
-.comentarioBtn {
-  grid-area: c;
-  background: blue;
-}
+
 .containerDesc {
     grid-area: d;
     padding: 0 15% 0 15%;
     font-size: 1.2vw;
     justify-content: center;
 }
-.box5 {
+.containerFiles {
     grid-area: e;    
     
 }
-.arquivosBtn {
-    grid-area: f;
-    background: green;
-}
+
 .box7 {
     grid-area: g;
     display: flex;
@@ -79,10 +107,7 @@ html, body {
 .box8 {
     grid-area: h;
 }
-.linksBtn {
-    grid-area: i;
-    background: blue;    
-}
+
 .boxes {
     display: flex;
     justify-content: center;
