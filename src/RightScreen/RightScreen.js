@@ -70,15 +70,15 @@ class RightScreen extends React.Component {
     decide = function(){
         switch(this.state.definirTelaDireita){
             case 1:
-                return  <div>
+                return  <div className="rightContent">
                              <Userbox Userbox={this.state.Userbox}  />
-                         </div>
+                        </div>
             case 2:
-                return <div>
+                return <div className="rightContent">
                             <Filebox Filebox={this.state.Filebox} />
                         </div>
             case 3:
-                return <Linkbox Linkbox={this.state.Linkbox} />
+                return <Linkbox className="rightContent" Linkbox={this.state.Linkbox} />
             default:
                 console.log("Deu merda no switch-case");
         }
@@ -87,8 +87,8 @@ class RightScreen extends React.Component {
     
     render() {
         return (
-            <div className="rightScreen">
-            <div className='nave'>
+        <div className="rightScreen">
+            <div className="nave">
          <Paper>
             <Tabs
                 value={this.state.value}
@@ -96,7 +96,7 @@ class RightScreen extends React.Component {
                 textColor="primary"
                 onChange={this.handleChange}
             >
-                <Tab label="Active" onClick={() =>{
+                <Tab className="rBtn" label="Links" onClick={() =>{
                     
                     this.setState(() => {
                         return {   
@@ -109,7 +109,7 @@ class RightScreen extends React.Component {
                     });
                     }}/>
 
-                <Tab label="Active" onClick={() =>{
+                <Tab className="rBtn" label="Arquivos" onClick={() =>{
                     
                     this.setState(() => {
                         return {
@@ -123,8 +123,8 @@ class RightScreen extends React.Component {
                         };
                     });
                     }} />
-
-                <Tab label="Active" onClick={() =>{
+                <label></label>
+                <Tab className="rBtn" label="Comentarios" onClick={() => {
                     
                     this.setState(() => {
                         return {
@@ -150,7 +150,7 @@ class RightScreen extends React.Component {
                 {this.decide()}
                 <Input inp = {this.state.Input.inp} />
                 <Submited/>
-            </div>
+        </div>
         )
     }
 }

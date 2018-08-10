@@ -20,7 +20,26 @@ html, body {
     grid-area: rightScreen;
     background: #eb4026;
     overflow: scroll;
+    display: grid;
+    grid-template-areas: 
+    "rButtons rContent";
+    grid-template-columns: 100% 90%;
+    grid-template-rows: 100%;
 }
+
+.nave{
+    grid-area: rButtons;
+    background: #e88b2e;
+}
+.rBtn {
+    width: 10%;
+    background: purple;
+}
+.rightContent {
+    grid-area: rContent;
+    background: black;
+}
+
 .rightScreen img {
     width: 100%;
     height: auto;
@@ -84,10 +103,6 @@ html, body {
 }
 .nav {
     transform: rotate(-90deg);
-}
-.nave{
-    transform: rotate(-90deg);
-    margin-top : 300px;
 }
 .nav button {
     display: none;
