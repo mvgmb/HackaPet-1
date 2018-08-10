@@ -13,16 +13,25 @@ html, body {
     grid-template-rows: 770px;
     background: black;
 }
-
+/*-------------------------
+       Right Screen
+-------------------------*/
 .rightScreen {
     grid-area: rightScreen;
     background: red;
 }
 .rightScreen img {
-    width: 200px;
+    width: 75px;
     height: auto;
 }
 
+
+
+
+
+/*-------------------------
+       Left Screen
+-------------------------*/
 .leftScreen {
     grid-area: leftScreen;
     display: grid;
@@ -119,17 +128,4 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.boxes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.miniBox{
-    margin-right: 10px; 
-    background: blueviolet;
-    width: 75px;
-    height: 100px;
-}
+}   
