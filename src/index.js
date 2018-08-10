@@ -54,7 +54,7 @@ const getCurrentCourse = () => {
 
     Arquivos : {
         inp : {accept: ".pdf",v:true},
-        pdfs : [{ref: imagemEstrela}, {ref : imagemEstrela}]
+        pdfs : [{ref: imagemEstrela, name : "Parsing"}, {ref : imagemEstrela, name: "LR1"}]
     }
   }
   }

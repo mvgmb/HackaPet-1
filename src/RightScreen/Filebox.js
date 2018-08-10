@@ -17,7 +17,10 @@ class Filebox extends React.Component{
         return (
             <div>
                 {this.state.pdfs.map(arr => (
+                <div>
                     <a href = {arr.ref} download> <img src={imagemPdf} /> </a>
+                    <p> {arr.name} </p>
+                </div>
                 ))}
             </div>
         )
