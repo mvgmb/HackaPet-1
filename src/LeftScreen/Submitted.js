@@ -11,7 +11,7 @@ class Submitted extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            files : this.props,
+            files : this.props.files,
         };
     }
 

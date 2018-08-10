@@ -9,6 +9,7 @@ import Name from './Name.js';
 import Description from './Description.js';
 import FurtherDescription from './FurtherDescription.js';
 import ViewHeader from './ViewHeader.js';
+import Submitted from './Submitted.js';
 
 class LeftScreen extends React.Component {
 
@@ -18,7 +19,8 @@ class LeftScreen extends React.Component {
         this.state = {
             name : props.course.name,
             descricao : props.course.descricao,
-            professores : props.course.professores[0]
+            professores : props.course.professores[0],
+            files : props.course.files
         }
     
     }
@@ -33,13 +35,21 @@ class LeftScreen extends React.Component {
                     <Description descricao={this.state.descricao} />
                 </div>
                 <div className="containerFiles">
-
+                    <Submitted files={this.state.files }/>
                 </div>
                 <div>
                     <FurtherDescription professores={this.state.professores} />
                 </div>
-                <div className="comentarioBtn">
-                    <ViewHeader />
+                <div>
+                    <div className="comentarioBtn1">
+                        <ViewHeader labelName = "Comentarios" />
+                    </div>
+                    <div className="comentarioBtn2">
+                        <ViewHeader labelName = "Arquivos" />
+                    </div>
+                    <div className="comentarioBtn3">
+                        <ViewHeader labelName = "Links" />
+                    </div>
                 </div>
             </div>
         )

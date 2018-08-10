@@ -7,7 +7,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Userbox from './Userbox.js';
-import Image from "./Image.js";
+import Filebox from './Filebox.js';
+import FilterBox from './FilterBox.js';
+import Linkbox from './Linkbox.js';
 
 class RightScreen extends React.Component {
 
@@ -15,7 +17,21 @@ class RightScreen extends React.Component {
         super(props);
         
         this.state = {
-            img: props.course.img  
+            Userbox : {
+                imgs : this.props.course.imgs,
+                text: this.props.course.text,
+                info: this.props.course.info,
+                name: this.props.course.name,
+                login: this.props.course.login
+            },
+
+            Linkbox : {
+               
+            },
+
+            Filebox : {
+
+            }
         }
     
     }
@@ -23,7 +39,10 @@ class RightScreen extends React.Component {
     render() {
         return (
             <div className="rightScreen">
-                <Image img={this.state.img}></Image>
+                <FilterBox/>
+                <Userbox userbox={this.state.Userbox} />
+                <Linkbox linkbox={this.state.Linkbox}/>
+                <Filebox filebox = {this.state.Filebox}/>
             </div>
         )
     }

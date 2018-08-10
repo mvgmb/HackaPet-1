@@ -5,15 +5,28 @@ import json from './description.json';
 import RightScreen from "./RightScreen/RightScreen.js";
 import './index.css';
 
-let a = require('./coala.jpg');
+//imagens aqui
+let imagemPerfil = require('./coala.jpg');
+let imagemEstrela = " ";
+let imagemQualquer = " ";
 
 const getClass = () => {
   return {
-    name: "Compiladores",
-    descricao: json.text,
-    professores: ["Leopoldo", "Luca"],
-    files : [],
-    img : {src: a, name:"test"}
+    left: {
+      name: "Compiladores",
+      descricao: json.text,
+      professores: ["Leopoldo"],
+      files : []
+    },
+    right : {
+      imgs : [{src: imagemPerfil, name:"test"},{src: imagemEstrela , name:"test"},{src: imagemQualquer, name : "teste"}],
+      text : 'qlqr merda ai',
+      info : 'qlqr merda ai',
+      username : 'qlqr merda ai',
+      login : 'qlqr merda ai'
+
+    }
+    
   }
 }
 
@@ -22,8 +35,8 @@ class Screen extends React.Component {
     
     return (
       <div className="containerMain">
-        <RightScreen course={getClass()}/>
-        <LeftScreen course={getClass()}/>
+        <LeftScreen course={getClass().left}/>
+        <RightScreen course={getClass().right}/>
       </div>
     )
   }

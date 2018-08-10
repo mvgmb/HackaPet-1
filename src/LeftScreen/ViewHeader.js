@@ -10,15 +10,21 @@ import ReactDOM from 'react-dom';
 
 
 class ViewHeader extends React.Component{
+    
+    constructor(props) {
+        super(props);
+        
+        this.state = {
+            labelName : props.labelName
+        }
+
+    }
+
     render(){
         return (
             <div className="nav"> 
-                <label for="comentariosBtn">Comentários</label>
+                <label for="comentariosBtn">{this.state.labelName}</label>
                 <button id="comentariosBtn" name="comentariosBtn"></button>
-                <label for="arquivosBtn">Arquivos</label>
-                <button id="arquivosBtn" name="arquivosBtn"></button>
-                <label for="linksBtn">Links</label>
-                <button id="linksBtn" name="linksBtn"></button>
             </div>
         )
     }
