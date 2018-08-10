@@ -145,6 +145,9 @@ class RightScreen extends React.Component {
             </Tabs>
          </Paper>
          </div>
+         <viewHadder onClick={()=>{
+             console.log("oi");
+         }}/>
                 <FilterBox/>
                 {this.decide()}
                 <Input inp = {this.state.Input.inp} />

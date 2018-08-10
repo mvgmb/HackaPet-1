@@ -14,7 +14,9 @@ class ViewHeader extends React.Component{
     constructor(props) {
         super(props);
         
+
         this.state = {
+            click : props.onClick,
             labelName : props.labelName
         }
 
@@ -24,7 +26,7 @@ class ViewHeader extends React.Component{
         return (
             <div className="nav"> 
                 <label for="btn">{this.state.labelName}</label>
-                <button id="btn" name="btn"></button>
+                <button onClick={this.state.click} id="btn" name="btn"></button>
             </div>
         )
     }
