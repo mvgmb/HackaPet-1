@@ -12,7 +12,7 @@ class Description extends React.Component{
     }
     render(){
         return (
-            <div>
+            <div class="userDescription">
                 <p> {this.state.text} </p>
                 <p> {this.state.info} </p>
             </div>    

@@ -14,7 +14,7 @@ class Image extends React.Component{
     }
     render(){
         return (
-            <img className="userImage" src={this.state.src} name={this.state.name}>
+            <img src={this.state.src} name={this.state.name}>
             </img>
         );
     }

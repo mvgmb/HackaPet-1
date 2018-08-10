@@ -12,9 +12,9 @@ class UserName extends React.Component{
     }
     render(){
         return (
-            <div>
-                <div> {this.state.name} </div>
-                <div> {this.state.login} </div>
+            <div class="containerNameLogin">
+                <div class="userName"> {this.state.name} </div>
+                <div class="userLogin"> {this.state.login} </div>
             </div>
         );
     }

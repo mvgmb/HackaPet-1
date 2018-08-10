@@ -18,23 +18,40 @@ html, body {
 -------------------------*/
 .rightScreen {
     grid-area: rightScreen;
-    background: red;
+    background: #eb4026;
 }
 .rightScreen img {
-    width: 75px;
+    width: 100%;
     height: auto;
 }
 .userBox {
+    display: grid;
     margin: 20px auto;
-    width: 300px;
-    height: 100px;
+    width: 400px;
+    height: 150px;
     border-radius: 20px;
     padding: 40px;
-    background: blue;
+    background: #d9ae8f;
+    grid-template-areas: 
+        "pic name stars"
+        "pic content content";
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 30% 70%;
 }
-
-
-
+#photoProfile {
+    grid-area: pic;
+}
+#stars {
+    grid-area: stars;
+}
+.containerNameLogin {
+    grid-area: name;
+    padding: 10px 0 0 20px;
+}
+.userDescription {
+    grid-area: content;
+    padding: 15px;
+}
 
 /*-------------------------
        Left Screen
@@ -65,7 +82,8 @@ html, body {
 
 #comentarioBtn {
     grid-area: c;
-    background: red;
+    background: #eb4026;
+    box-shadow: -8px 3px 25px grey;
 }
 #comentarioBtn:hover{
     background: #e88b2e;
@@ -73,13 +91,17 @@ html, body {
 #arquivosBtn {
     grid-area: f;
     background: lightblue;
+    box-shadow: -8px 3px 25px grey;
+
 }
 #arquivosBtn:hover {
     background: #e88b2e;
 }
 #linksBtn {
     grid-area: i;
-    background: lightblue;    
+    background: lightblue;   
+    box-shadow: -8px 3px 25px grey;
+ 
 }
 #linksBtn:hover {
     background: #e88b2e;

@@ -21,8 +21,6 @@ import UserName from './UserName';
                 <UserName name={this.state.name} login={this.state.login}> </UserName>
                 <Image img={this.state.imgs[1]} name="stars"> </Image>
                 <Description text={this.state.text} info={this.state.info}> </Description>
-                
-                
             </div>
         );
     }
