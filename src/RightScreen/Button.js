@@ -7,6 +7,7 @@ import Icon from '@material-ui/core/Icon';
 import DeleteIcon from '@material-ui/icons/Delete';
 import NavigationIcon from '@material-ui/icons/Navigation';
 
+
 const styles = theme => ({
   button: {
     margin: theme.spacing.unit,
@@ -36,6 +37,8 @@ function FloatingActionButtons(props) {
     </div>
   );
 }
+
+
 
 FloatingActionButtons.propTypes = {
   classes: PropTypes.object.isRequired,

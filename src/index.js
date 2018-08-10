@@ -10,6 +10,7 @@ let imagemPerfil = require('./coala.jpg');
 let imagemEstrela = require('./stars.png');
 let imagemQualquer = " ";
 let imagemProf = require('./prof.jpg');
+
 const getClass = () => {
   return {
     left: {
@@ -19,7 +20,7 @@ const getClass = () => {
       files : []
     },
     right: {
-      vale: 3,
+      vale: 1,
     rightC : {
       imgs : [{src: imagemPerfil, name:"test"},
               {src: imagemEstrela , name:"test"},

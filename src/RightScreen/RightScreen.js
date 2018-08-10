@@ -86,7 +86,18 @@ class RightScreen extends React.Component {
     render() {
         return (
             <div className="rightScreen">
-                {render(<Button />)};
+                  <Button variant="contained" color="primary" onClick={() => { 
+                        this.setState(() => {
+                                return {
+                                    vale : 2
+                                };
+                            });
+  
+  
+
+                   }}>
+                         Hello World
+                  </Button>
                 <FilterBox/>
                 {this.decide()}
                 <Input inp = {this.state.Input.inp} />
