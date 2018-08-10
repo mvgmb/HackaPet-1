@@ -22,8 +22,8 @@ class FurtherDescription extends React.Component{
         return (
            <div className="furtherDesc">
                <img/>
-                <p className="professor"> {this.state.professores.nome}</p>
                 <Image img={this.state.professores.img} name="profImg"></Image>
+                <p className="professor"> {this.state.professores.nome}</p>
             </div> 
         )
     }
