@@ -48,11 +48,6 @@ class RightScreen extends React.Component {
                 <FilterBox/>
                 <Userbox userbox={this.state.Userbox} />
                 <Linkbox linkbox={this.state.Linkbox}/>
-                <Linkbox linkbox={this.state.Linkbox}/>
-                <Linkbox linkbox={this.state.Linkbox}/>
-                <Linkbox linkbox={this.state.Linkbox}/>
-                <Linkbox linkbox={this.state.Linkbox}/>
-                
                 <Filebox filebox = {this.state.Filebox}/>
                 <Input inp={this.state.Input}/>
                 <Submited/>
