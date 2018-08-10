@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom';
 import Name from './Name.js';
 import Description from './Description.js';
 import FurtherDescription from './FurtherDescription.js';
+import ViewHeader from './ViewHeader.js';
 
 class LeftScreen extends React.Component {
 
@@ -33,6 +34,9 @@ class LeftScreen extends React.Component {
                 </div>
                 <div>
                     <FurtherDescription professores={this.state.professores} />
+                </div>
+                <div className="comentarioBtn">
+                    <ViewHeader />
                 </div>
             </div>
         )
