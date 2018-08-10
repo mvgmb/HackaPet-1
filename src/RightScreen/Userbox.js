@@ -14,20 +14,25 @@ import UserName from './UserName';
     constructor(props){
         super(props);
         this.state = {
-            name : props.img.name,
-            src: props.img.src,
+             a: [{
+                    name : props.img[0].name,
+                    src: props.img[0].src
+             },
+            {       name: props.img[1].name,
+                    src: props.img[1].src
+            }]
         };
+            
     }
-
 
 
     render(){
         return (
             <div>
-                <Image src={this.state.src} name="photoProfile"> </Image>
+                <Image src={this.state.a[0].src} name="photoProfile"> </Image>
                 <Description text={this.state.text} info={this.state.info}> </Description>
                 <UserName name={this.state.name} info={this.state.name}> </UserName>
-                <Image src={this.state.src} name="stars"> </Image>
+                <Image src={this.state.a[1].src} name="stars"> </Image>
                 <div> <h2>FILE</h2> </div>
             </div>
         );

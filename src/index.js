@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import LeftScreen from './LeftScreen/LeftScreen.js';
 import json from './description.json';
 import RightScreen from "./RightScreen/RightScreen.js";
-import './index.css';
 
-let a = require('./coala.jpg');
+let UserImage = require('./coala.jpg');
+let Stars = require('./stars.png');
 
 const getClass = () => {
   return {
@@ -13,7 +13,7 @@ const getClass = () => {
     descricao: json.text,
     professores: ["Leopoldo", "Luca"],
     files : [],
-    img : {src: a, name:"test"}
+    img : [{src: UserImage, name:"test"}, {src: Stars, name:"test"}]
   }
 }
 
@@ -23,7 +23,7 @@ class Screen extends React.Component {
     return (
       <div className="containerMain">
         <RightScreen course={getClass()}/>
-        <LeftScreen course={getClass()}/>
+         <LeftScreen course={getClass()}/>
       </div>
     )
   }
