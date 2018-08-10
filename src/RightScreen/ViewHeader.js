@@ -24,9 +24,9 @@ class ViewHeader extends React.Component{
 
     render(){
         return (
-            <div className="nav"> 
-                <label for="btn">{this.state.labelName}</label>
-                <button onClick={this.state.click} id="btn" name="btn"></button>
+            <div className="nav" onClick={this.state.click}> 
+                <label  for="btn">{this.state.labelName}</label>
+                <button  id="btn" name="btn"></button>
             </div>
         )
     }
