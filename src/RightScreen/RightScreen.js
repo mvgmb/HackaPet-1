@@ -47,7 +47,7 @@ class RightScreen extends React.Component {
                 <Userbox userbox={this.state.Userbox} />
                 <Linkbox linkbox={this.state.Linkbox}/>
                 <Filebox filebox = {this.state.Filebox}/>
-                <Input input={this.state.Input}/>
+                <Input inp={this.state.Input}/>
             </div>
         )
     }
