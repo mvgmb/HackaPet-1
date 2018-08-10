@@ -10,6 +10,8 @@ import Userbox from './Userbox.js';
 import Filebox from './Filebox.js';
 import FilterBox from './FilterBox.js';
 import Linkbox from './Linkbox.js';
+import Input from './Input.js';
+import Submited from './Submited.js'
 
 class RightScreen extends React.Component {
 
@@ -31,6 +33,9 @@ class RightScreen extends React.Component {
 
             Filebox : {
 
+            },
+            Input : {
+                inp: this.props.course.inp
             }
         }
     
@@ -43,6 +48,8 @@ class RightScreen extends React.Component {
                 <Userbox userbox={this.state.Userbox} />
                 <Linkbox linkbox={this.state.Linkbox}/>
                 <Filebox filebox = {this.state.Filebox}/>
+                <Input inp={this.state.Input}/>
+                <Submited/>
             </div>
         )
     }

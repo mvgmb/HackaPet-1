@@ -2,12 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-
 class Submited extends React.Component{
 
     render(){
         return (
-            <button> + </button>
+            <button className="btnEnviar"> Submeter </button>
         )
     }
 }
