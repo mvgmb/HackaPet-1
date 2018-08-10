@@ -11,16 +11,22 @@ import UserName from './UserName.js';
   class Userbox extends React.Component{
     constructor(props){
         super(props);
-        this.state = props.Userbox;
+        this.state = {
+            Userbox : props.Userbox 
+        }
     }
 
     render(){
         return (
-            <div class="userBox">
-                <Image img={this.state.imgs[0]} name="photoProfile"> </Image>
-                <UserName name={this.state.name} login={this.state.login}> </UserName>
-                <Image img={this.state.imgs[1]} name="stars"> </Image>
-                <Description text={this.state.text} info={this.state.info}> </Description>
+            <div>
+                {this.state.Userbox.map(arr => (
+                    <div class="userBox">
+                        <Image img={arr.imgs[0]} name="photoProfile"> </Image>
+                        <UserName name={arr.name} login={arr.login}> </UserName>
+                        <Image img={arr.imgs[1]} name="stars"> </Image>
+                        <Description text={arr.text} info={arr.info}> </Description>
+                    </div>
+                ))}
             </div>
         );
     }
