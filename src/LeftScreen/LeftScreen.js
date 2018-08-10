@@ -37,11 +37,15 @@ class LeftScreen extends React.Component {
 
                 <div className="containerFiles">
                     <Submitted files={this.state.files }/>
-                </div>
-                <div className="containerFiles">
+                    <Submitted files={this.state.files }/>
                     <Submitted files={this.state.files }/>
                 </div>
-                <div className="containerFiles">
+                <div className="containerLinks">
+                    <Submitted files={this.state.files }/>
+                    <Submitted files={this.state.files }/>
+                    <Submitted files={this.state.files }/>
+                </div>
+                <div className="containerResume">
                     <Submitted files={this.state.files }/>
                 </div>
 
@@ -58,7 +62,7 @@ class LeftScreen extends React.Component {
                 <div id="linksBtn" className="navBtn">
                     <ViewHeader labelName = "Links" />
                 </div>
-                
+
             </div>
         )
     }

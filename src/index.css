@@ -92,21 +92,35 @@ html, body {
     font-size: 1.2vw;
     justify-content: center;
 }
+
+.fileLabel {
+    margin-right: 10px; 
+    background: blueviolet;
+    width: 75px;
+    height: 100px;
+}
+.fileLabel:hover {
+    background: #e88b2e;
+}
 .containerFiles {
     grid-area: e;    
-    
-}
-
-.box7 {
-    grid-area: g;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.box8 {
-    grid-area: h;
+.containerResume {
+    grid-area: g;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.containerLinks {
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .boxes {
     display: flex;
