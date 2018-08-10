@@ -25,8 +25,8 @@ const getClass = () => {
       text : 'Cadeira muito TOP!!! Amei as aulas e achei o professor muito instrutivo, sempre ajudando nas horas difíceis.',
       info : '2018.2 Leopoldo Afonso',
       name : 'Sheila Vitoria',
-      login : '@svgm3'
-
+      login : '@svgm3',
+      inp: {accept: ".pdf"}
     }
     
   }
