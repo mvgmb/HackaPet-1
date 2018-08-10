@@ -5,7 +5,7 @@ class UserName extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            name: props.nome,
+            name: props.name,
             login: props.login
         };
 
@@ -13,8 +13,8 @@ class UserName extends React.Component{
     render(){
         return (
             <div>
-                <h3> {this.state.name} </h3>
-                <h4> {this.state.login} </h4>
+                <div> {this.state.name} </div>
+                <div> {this.state.login} </div>
             </div>
         );
     }

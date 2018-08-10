@@ -6,7 +6,7 @@ class Description extends React.Component{
         super(props);
         this.state = {
             text: props.text,
-            prof: props.prof
+            info: props.info
         };
 
     }
@@ -14,7 +14,7 @@ class Description extends React.Component{
         return (
             <div>
                 <p> {this.state.text} </p>
-                <p> {this.state.prof} </p>
+                <p> {this.state.info} </p>
             </div>    
         );
     }
