@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class image extends React.Component{
+class Image extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -18,4 +18,4 @@ class image extends React.Component{
     }
 }
 
-export default image;
+export default Image;

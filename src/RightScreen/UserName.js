@@ -5,15 +5,17 @@ class UserName extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            name: props.name,
-            login: props.login
+            name: props.nome,
+            src: props.login
         };
 
     }
     render(){
         return (
-            <h3> {this.state.name} </h3>
-            <h4> {this.state.login} </h4>
+            <div>
+                <h3> {this.state.name} </h3>
+                <h4> {this.state.src} </h4>
+            </div>
         );
     }
 }
