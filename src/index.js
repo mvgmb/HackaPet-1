@@ -19,7 +19,9 @@ const getClass = () => {
       files : []
     },
     right : {
-      imgs : [{src: imagemPerfil, name:"test"},{src: imagemEstrela , name:"test"},{src: imagemQualquer, name : "teste"}],
+      imgs : [{src: imagemPerfil, name:"test"},
+              {src: imagemEstrela , name:"test"},
+              {src: imagemQualquer, name : "teste"}],
       text : 'qlqr merda ai',
       info : 'qlqr merda ai',
       username : 'qlqr merda ai',
