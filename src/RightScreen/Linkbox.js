@@ -15,11 +15,13 @@ class Linkbox extends React.Component{
 
     render(){
         return (
+            <div className="linkbox">
             <div>
                 {this.state.links.map(arr => (
 
                     <a href = {arr.ref} target = "_blank"> <img src={link} />{arr.nome} </a>
                 ))}
+            </div>
             </div>
         )
     }

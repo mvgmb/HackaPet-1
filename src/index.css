@@ -246,3 +246,18 @@ html, body {
 .fileboxpdf p {
     margin-top: 45px;
 }
+.linkbox {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 20px;
+}
+
+.linkbox img {
+    max-width: 170px;
+    height: auto;
+}
+
+.linkbox a {
+    color: white;  
+    text-decoration: none;
+}
