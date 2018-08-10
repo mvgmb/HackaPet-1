@@ -7,7 +7,7 @@ import './index.css';
 
 //imagens aqui
 let imagemPerfil = require('./coala.jpg');
-let imagemEstrela = require('./stars.png');
+let imagemEstrela = " ";
 let imagemQualquer = " ";
 
 const getClass = () => {
@@ -19,13 +19,13 @@ const getClass = () => {
       files : []
     },
     right : {
-      imgs : [{src: imagemPerfil, name:"Perfil"},
-              {src: imagemEstrela , name:"Stars"},
+      imgs : [{src: imagemPerfil, name:"test"},
+              {src: imagemEstrela , name:"test"},
               {src: imagemQualquer, name : "teste"}],
-      text : 'A cadeira é TOP!!!',
-      login : 'asdasd',
-      username : 'adsasdas',
-      login : '@login'
+      text : 'qlqr merda ai',
+      info : 'qlqr merda ai',
+      username : 'qlqr merda ai',
+      login : 'qlqr merda ai'
 
     }
     
