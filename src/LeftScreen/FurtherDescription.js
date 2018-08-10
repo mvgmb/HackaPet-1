@@ -6,7 +6,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import Image from '../RightScreen/Image.js';
 
 class FurtherDescription extends React.Component{
     constructor(props){
@@ -19,11 +19,12 @@ class FurtherDescription extends React.Component{
     }
 
     render(){
+        console.log(this.state.professores);
         return (
            <div className="furtherDesc">
                <img/>
-                <p className="professor"> {this.state.professores}</p>
-                <img/>
+                <p className="professor"> {this.state.professores.nome}</p>
+                <Image img={this.state.professores.img} name="profImg" width="300px" height="300px"></Image>
             </div> 
         )
     }

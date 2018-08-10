@@ -9,13 +9,13 @@ import './index.css';
 let imagemPerfil = require('./coala.jpg');
 let imagemEstrela = require('./stars.png');
 let imagemQualquer = " ";
-
+let imagemProf = require('./prof.jpg');
 const getClass = () => {
   return {
     left: {
       name: "Compiladores",
       descricao: json.text,
-      professores: ["Leopoldo"],
+      professores: [{nome:"Leopoldo",img: {src: imagemProf, name: "Leopoldo"}}],
       files : []
     },
     right : {

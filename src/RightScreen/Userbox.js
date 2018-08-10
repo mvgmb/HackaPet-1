@@ -6,7 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Image from "./Image.js";
 import Description from './Description.js';
-import UserName from './UserName';
+import UserName from './UserName.js';
 
   class Userbox extends React.Component{
     constructor(props){

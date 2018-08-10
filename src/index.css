@@ -25,6 +25,10 @@ html, body {
     width: 100%;
     height: auto;
 }
+.leftScreen img{/*lucas*/
+    width: 100%;
+    height: auto;
+}
 /*----- User Box ------*/
 
 .userBox {
