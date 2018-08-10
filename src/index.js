@@ -9,7 +9,7 @@ const getClass = () => {
     descricao: cu,
     professores: ["Leopoldo", "Luca"],
     files : [],
-    img : {src:"Oi!", name:"test"}
+    img : {src:"/Users/italo/Desktop/HackaPet/src", name:"test"}
   }
 }
 
