@@ -18,9 +18,11 @@ import UserName from './UserName';
         return (
             <div class="userBox">
                 <Image img={this.state.imgs[0]} name="photoProfile"> </Image>
-                <Description text={this.state.text} info={this.state.info}> </Description>
                 <UserName name={this.state.name} login={this.state.login}> </UserName>
                 <Image img={this.state.imgs[1]} name="stars"> </Image>
+                <Description text={this.state.text} info={this.state.info}> </Description>
+                
+                
             </div>
         );
     }

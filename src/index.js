@@ -22,10 +22,10 @@ const getClass = () => {
       imgs : [{src: imagemPerfil, name:"test"},
               {src: imagemEstrela , name:"test"},
               {src: imagemQualquer, name : "teste"}],
-      text : 'Cadeira muito TOP!!!',
-      info : 'qlqr merda ai',
-      username : 'qlqr merda ai',
-      login : '@login'
+      text : 'Cadeira muito TOP!!! Amei as aulas e achei o professor muito instrutivo, sempre ajudando nas horas difíceis.',
+      info : '2018.2 Leopoldo Afonso',
+      name : 'Sheila Vitoria',
+      login : '@svgm3'
 
     }
     
