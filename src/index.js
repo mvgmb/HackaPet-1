@@ -18,7 +18,9 @@ const getClass = () => {
       professores: [{nome:"Leopoldo",img: {src: imagemProf, name: "Leopoldo"}}],
       files : []
     },
-    right : {
+    right: {
+      vale: 1,
+    rightC : {
       imgs : [{src: imagemPerfil, name:"test"},
               {src: imagemEstrela , name:"test"},
               {src: imagemQualquer, name : "teste"}],
@@ -26,10 +28,18 @@ const getClass = () => {
       info : '2018.2 Leopoldo Afonso',
       name : 'Sheila Vitoria',
       login : '@svgm3',
-      inp: {accept: ".pdf", v: true},
-      link: {ref: "https://www.l2f.inesc-id.pt/~david/w/pt/Compiladores", nome: "Compiladores"}
+      inp: {accept: ".pdf", v: false},
+    },
+
+    rightL : {
+      inp: {accept: ".pdf", v: false},
+      link: [{ref: "https://www.l2f.inesc-id.pt/~david/w/pt/Compiladores", nome: "Compiladores"}]
+    },
+
+    rightF : {
+      inp : {accept: ".pdf",v:true}
     }
-    
+  }
   }
 }
 

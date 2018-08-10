@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom';
 class Linkbox extends React.Component{
     constructor(props){
         super(props);
-        console.log(props);
         this.state = {
             ref: props.linkbox.ref,
             nome: props.linkbox.nome

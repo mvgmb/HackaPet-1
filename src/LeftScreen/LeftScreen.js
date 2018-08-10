@@ -11,6 +11,7 @@ import FurtherDescription from './FurtherDescription.js';
 import ViewHeader from './ViewHeader.js';
 import Submitted from './Submitted.js';
 
+
 class LeftScreen extends React.Component {
 
     constructor(props) {

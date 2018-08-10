@@ -4,12 +4,9 @@ import ReactDOM from 'react-dom';
 class Image extends React.Component{
     constructor(props){
         super(props);
-        
-        console.log("!!!" + Object.keys(props).join(''));
         this.state = {
             src: props.img.src
         };
-        console.log(this.state);
 
     }
     render(){

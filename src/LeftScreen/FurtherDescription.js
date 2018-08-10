@@ -19,12 +19,11 @@ class FurtherDescription extends React.Component{
     }
 
     render(){
-        console.log(this.state.professores);
         return (
            <div className="furtherDesc">
                <img/>
                 <p className="professor"> {this.state.professores.nome}</p>
-                <Image img={this.state.professores.img} name="profImg" width="300px" height="300px"></Image>
+                <Image img={this.state.professores.img} name="profImg"></Image>
             </div> 
         )
     }

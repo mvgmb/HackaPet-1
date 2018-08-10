@@ -7,14 +7,13 @@ class Input extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            accepti: props.inp.inp.accept,
-            a: props.inp.inp.v
+             in:props.inp.inp
         };
 
     }
     render(){
-        if(this.state.a){
-            return (<input className="userArchieveUP" type="file" accept={this.state.accepti}>
+        if(this.state.in.a){
+            return (<input className="userArchieveUP" type="file" accept={this.state.in.accept}>
             </input>);
         }
         else
