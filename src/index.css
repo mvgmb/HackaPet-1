@@ -196,9 +196,15 @@ html, body {
 .namepdf{
     display: flex;
     flex-direction: column;
+    text-align: center;
+
 }
-.namepdf span {
-    max-width: 100%;
+.namepdf p {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
 }
 .containerResume {
     grid-area: g;
