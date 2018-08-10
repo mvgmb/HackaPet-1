@@ -16,7 +16,7 @@ import UserName from './UserName';
 
     render(){
         return (
-            <div>
+            <div class="userBox">
                 <Image img={this.state.imgs[0]} name="photoProfile"> </Image>
                 <Description text={this.state.text} info={this.state.info}> </Description>
                 <UserName name={this.state.name} login={this.state.login}> </UserName>
