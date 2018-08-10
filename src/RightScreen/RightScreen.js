@@ -99,10 +99,8 @@ class RightScreen extends React.Component {
                 <Tab label="Active" onClick={() =>{
                     
                     this.setState(() => {
-                        return {   Linkbox : {
-                            ref: this.props.course.Links.link[0].ref,
-                            nome: this.props.course.Links.link[0].nome
-                        },
+                        return {   
+                            Linkbox : this.props.course.Links.link,
                         Input : {
                             inp: this.props.course.Links.inp
                         },
@@ -148,9 +146,6 @@ class RightScreen extends React.Component {
             </Tabs>
          </Paper>
          </div>
-                  <Button variant="contained" color="primary" >
-                         Hello World
-                  </Button>
                 <FilterBox/>
                 {this.decide()}
                 <Input inp = {this.state.Input.inp} />

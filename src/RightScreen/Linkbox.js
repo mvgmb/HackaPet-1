@@ -7,14 +7,17 @@ class Linkbox extends React.Component{
         
         super(props);
         this.state = {
-            ref: props.Linkbox.ref,
-            nome: props.Linkbox.nome
+            links : props.Linkbox
         };
     }
 
     render(){
         return (
-            <a href = {this.state.ref} target = "_blank"> {this.state.nome} </a>
+            <div>
+                {this.state.links.map(arr => (
+                    <a href = {arr.ref} target = "_blank"> {arr.nome} </a>
+                ))}
+            </div>
         )
     }
 }

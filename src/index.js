@@ -39,7 +39,7 @@ const getCurrentCourse = () => {
 
     Links : {
       inp: {accept: ".pdf", v: false},
-      link: [{ref: "https://www.l2f.inesc-id.pt/~david/w/pt/Compiladores", nome: "Compiladores"}]
+      link: [{ref: "https://www.l2f.inesc-id.pt/~david/w/pt/Compiladores", nome: "Compiladores"},{ref: "https://www.l2f.inesc-id.pt/~david/w/pt/Compiladores", nome: "Compiladores"} ]
     },
 
     Arquivos : {
