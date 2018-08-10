@@ -9,7 +9,7 @@ const getClass = () => {
     descricao: cu,
     professores: ["Leopoldo", "Luca"],
     files : [],
-    img : {src:"Oi!", name:"test"}
+    img : {src:"/Users/italo/Desktop/HackaPet/src", name:"test"}
   }
 }
 
@@ -32,4 +32,7 @@ ReactDOM.render(
   <Screen />,
   document.getElementById('root')
 );
+<<<<<<< HEAD
 
+=======
+>>>>>>> 99977ec7c97f5fde3a7190a64b526b298ada80b3
