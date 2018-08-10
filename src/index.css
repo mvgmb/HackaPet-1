@@ -20,7 +20,28 @@ html, body {
     grid-area: rightScreen;
     background: #eb4026;
     overflow: scroll;
+    display: grid;
+    grid-template-areas: 
+    "coment rContent"
+    "arquiv rContent"
+    "links rContent";
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
 }
+
+.nave{
+    background: #e88b2e;
+}
+.rBtn {
+    width: 10%;
+    background: purple;
+}
+.rightContent {
+    grid-area: rContent;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .rightScreen img {
     width: 100%;
     height: auto;
@@ -29,15 +50,51 @@ html, body {
     width: 100%;
     height: auto;
 }
+.nav {
+    transform: rotate(90deg);
+}
+.nav button {
+    display: none;
+}
+.navBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+}
+
+#comentarioBtn {
+    grid-area: coment;
+    background: #eb4026;
+}
+#comentarioBtn:hover{
+    background: #e88b2e;
+}
+#arquivosBtn {
+    grid-area: arquiv;
+    background: lightblue;
+}
+#arquivosBtn:hover {
+    background: #e88b2e;
+}
+
+#linksBtn {
+    grid-area: links;
+    background: lightblue;   
+ 
+}
+#linksBtn:hover {
+    background: #e88b2e;
+}
 /*----- User Box ------*/
 
 .userBox {
     display: grid;
     margin: 20px auto;
-    width: 400px;
-    height: 150px;
+    width: 340px;
+    height: 120px;
     border-radius: 20px;
-    padding: 40px;
+    padding: 34px;
     background: #d9ae8f;
     grid-template-areas: 
         "pic name stars"
@@ -52,12 +109,15 @@ html, body {
     grid-area: stars;
 }
 .containerNameLogin {
+    font-size: 1vw;
     grid-area: name;
-    padding: 10px 0 0 20px;
+    padding: 2px 0 0 20px;
 }
 .userDescription {
+    font-size: 1vw;
+    font-style: italic;
     grid-area: content;
-    padding: 15px;
+    padding: 8px 0 0 20px;
 }
 /*----- File Box ------*/
 .fileBox {
@@ -82,50 +142,7 @@ html, body {
     grid-template-rows: 33.3% 33.3% 33.3%;
     background: lightblue;
 }
-.nav {
-    transform: rotate(-90deg);
-}
-.nave{
-    transform: rotate(-90deg);
-    margin-top : 300px;
-}
-.nav button {
-    display: none;
-}
-.navBtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px 0 0 15px;
-}
 
-#comentarioBtn {
-    grid-area: c;
-    background: #eb4026;
-    box-shadow: -8px 3px 25px grey;
-}
-#comentarioBtn:hover{
-    background: #e88b2e;
-}
-#arquivosBtn {
-    grid-area: f;
-    background: lightblue;
-    box-shadow: -8px 3px 25px grey;
-
-}
-#arquivosBtn:hover {
-    background: #e88b2e;
-}
-
-#linksBtn {
-    grid-area: i;
-    background: lightblue;   
-    box-shadow: -8px 3px 25px grey;
- 
-}
-#linksBtn:hover {
-    background: #e88b2e;
-}
 
 .containerName {
     grid-area: a;
