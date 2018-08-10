@@ -32,6 +32,9 @@ class LeftScreen extends React.Component {
                 <div className="containerDesc" >
                     <Description descricao={this.state.descricao} />
                 </div>
+                <div className="containerFiles">
+
+                </div>
                 <div>
                     <FurtherDescription professores={this.state.professores} />
                 </div>
