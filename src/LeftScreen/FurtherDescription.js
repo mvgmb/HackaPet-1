@@ -20,9 +20,9 @@ class FurtherDescription extends React.Component{
 
     render(){
         return (
-           <div>
+           <div className="furtherDesc">
                <img/>
-                <p> {this.state.professores}</p>
+                <p className="professor"> {this.state.professores}</p>
                 <img/>
             </div> 
         )

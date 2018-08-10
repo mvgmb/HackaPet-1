@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 
+
 html, body {
       background-color: #AFA;
       font-family: "Raleway", Times, serif;
@@ -10,43 +11,16 @@ html, body {
         "leftScreen rightScreen";
     grid-template-columns: 60% 40%;
     grid-template-rows: 770px;
+    background: black;
 }
-
-
-
-
-
-.leftSfecreen {
-    grid-area: leftScreen;
-    display: grid;
-    grid-template-areas:
-        "name prof menu"
-        "descricao prof menu"
-        "file prof menu";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    background: lightblue;
-}
-.containerName {
-    grid-area: name;
-    background: red;
-    width: 100px;
-    height: 100px;
-}
-.containerDesc {
-    grid-area: descricaoCadeira;
-    background: green;
-    width: 100px;
-    height: 100px;
-}
-
-
-
-
 
 .rightScreen {
     grid-area: rightScreen;
     background: red;
+}
+.rightScreen img {
+    width: 200px;
+    height: auto;
 }
 
 .leftScreen {
@@ -60,7 +34,7 @@ html, body {
     grid-template-rows: 33% 33% 33%;
     background: lightblue;
 }
-.box1 {
+.containerName {
     grid-area: a;
     display:flex;
     justify-content: center;
@@ -68,7 +42,7 @@ html, body {
     font-size: 1.3vw;
 
 }
-.box2 {
+.furtherDesc {
     grid-area: b;
     display: flex;
     flex-direction: column;
@@ -85,7 +59,7 @@ html, body {
     background: red;
     border-radius: 25px 0 0 25px;
 }
-.box4 {
+.containerDesc {
     grid-area: d;
     padding: 0 15% 0 15%;
     font-size: 1.2vw;

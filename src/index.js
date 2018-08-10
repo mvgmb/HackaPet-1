@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import LeftScreen from './LeftScreen/LeftScreen.js';
 import json from './description.json';
 import RightScreen from "./RightScreen/RightScreen.js";
+import './index.css';
 
 let a = require('./coala.jpg');
 
@@ -22,7 +23,7 @@ class Screen extends React.Component {
     return (
       <div className="containerMain">
         <RightScreen course={getClass()}/>
-         <LeftScreen course={getClass()}/>
+        <LeftScreen course={getClass()}/>
       </div>
     )
   }
